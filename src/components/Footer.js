@@ -3,9 +3,9 @@ import React from 'react'
 const Footer = () => {
   return (
     <footer>
-        <div className="footer row flex container">
+        <div className="footer row flex container-fluid">
             <div className="footer-details row">
-                <a href="#" className="logo" ><img src="./imgs/logo.png" alt="logo" className="logo-img" /></a>
+                <a href="#" className="logo" ><img src={require("../icons/letter-m.png")} alt="logo" className="logo-img" /></a>
                 <ul>
                     <li className="row">
                         <h5>Address: </h5>
@@ -17,34 +17,41 @@ const Footer = () => {
                     </li>
                     <li className="row">
                         <h5>Email: </h5>
-                        <p>contact@michgidglobal@gmail.com</p>
+                        <a href="mailto:contact@michgidglobal@gmail.com">contact@michgidglobal@gmail.com</a>
+
                     </li>
                 </ul>
                 
             </div>
             <div className="footer-content">
-                <h5>Newsletter: </h5>
-                <form action="" className="row">
+                
+                <div className="media-links mb-5">
+                    <h5>Socials: </h5>
+                    <div className="links">
+                        <a href="#">
+                            <img className="media-icon" src={require("../icons/facebook.png")} alt=""/>
+                        </a>
+                        <a href="#">
+                            <img className="media-icon" src={require("../icons/twitter.png")} alt=""/>
+                        </a>
+                        <a href="#">
+                            <img className="media-icon" src={require("../icons/instagram.png")} alt=""/>
+                        </a>
+                        <a href="#">
+                            <img className="media-icon" src={require("../icons/linkedin.png")} alt=""/>
+                        </a>
+                    </div>
+                </div>
+
+                
+                <form action="">
+                    <h5>Newsletter: </h5>
                     <input type="email" name="" id="" placeholder="Your email here"/>
                     <button type="submit" className="page-btn-2">Subscribe</button>
                 </form>
-                <h5>Social: </h5>
-                <div className="media-links row">
-                    <a href="#">
-                        <img className="media-icon" src="./icons/facebook.png" alt=""/>
-                    </a>
-                    <a href="#">
-                        <img className="media-icon" src="./icons/twitter.png" alt=""/>
-                    </a>
-                    <a href="#">
-                        <img className="media-icon" src="./icons/instagram.png" alt=""/>
-                    </a>
-                </div>
             </div>
             <div className="copy-right">
-                <div className="container">
-                    <p>Michgid Global Resources Ltd. &copy; 2023, All RIghts Reserved.</p>
-                </div>
+                <p>Michgid Global Resources Ltd. &copy; 2023, All RIghts Reserved.</p>
             </div>
         </div>
     </footer>

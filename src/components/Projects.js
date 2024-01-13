@@ -37,7 +37,6 @@ const Projects = () => {
 
     useEffect(()=> {
         tag === 'all' ? setFilteredImages(images) : setFilteredImages(images.filter(image => image.tag == tag));
-        console.log(tag)
     }, [tag])
 
     return (
@@ -79,9 +78,8 @@ const Projects = () => {
                                     <div className="overlay">
                                         <a href={`/services/${image.tag}`}><span>Learn More</span></a>
                                     </div>
-                                </div>
-        
-                            </div>))}
+                            </div>
+                        </div>))}
                     </div>
                 </div>
                 

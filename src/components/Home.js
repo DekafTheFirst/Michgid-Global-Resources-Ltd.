@@ -13,7 +13,7 @@ const Home = ({navOpen}) => {
         <div className="about-content">
             <h1>Welcome to Michgid Global Resources Intl.</h1>
             <p>Our Company has been the leading construction service to clients through out Nigeria since 20**.</p>
-            <a href="#" className="page-btn-2">Contact Us</a>
+            <a href="/about-us" className="page-btn-2">Learn More</a>
         </div>
         <div className="vision row">
             <div className="vision-content">
@@ -67,39 +67,40 @@ const Home = ({navOpen}) => {
         <div className="container">
             <h3>Services</h3>
             <div className="service-cards column">
-                <a href="#" className="s-card">
+                <a href="/services/residential-construction" className="s-card">
                     <div className="icon">
-                        <img src={require("../imgs/construction.png")} alt="construction" />
+                        <img src={require("../imgs/residential-construction.png")} alt="construction" />
                     </div>
-                    <h4>Construction</h4>
+                    <h4>Residential Construction</h4>
                 </a>
-                <a href="#" className="s-card">
+                <a href="/services/commercial-construction" className="s-card">
                     <div className="icon">
-                        <img src={require("../imgs/renovation.png")} alt="renovation" />
+                        <img src={require("../imgs/commercial-construction.png")} alt="renovation" />
                     </div>
-                    <h4>Renovation</h4>
+                    <h4>Commercial Construction</h4>
                 </a>
-                <a href="#" className="s-card">
+                <a href="/services/road-construction" className="s-card">
                     <div className="icon">
                         <img src={require("../imgs/concrete-mixer.png")} alt="road construction" />
                     </div>
                     <h4>Road Construction</h4>
                 </a>
 
-                <a href="#" className="s-card">
+                <a href="/services/borehole-drilling" className="s-card">
                     <div className="icon">
-                        <img src={require("../imgs/consultation.png")} alt="consultation" />
+                        <img src={require("../imgs/borehole-drilling.png")} alt="consultation" />
                     </div>
-                    <h4>Consultation</h4>
+                    <h4>Borehole Drilling</h4>
                 </a>
                 
-                <a href="#" className="s-card">
+                <a href="/services/general-merchandise" className="s-card">
                     <div className="icon">
                         <img src={require("../imgs/merchandise.png")} alt="merchandise" />
                     </div>
-                    <h4>Construction Materials</h4>
+                    <h4>General Merchandise</h4>
                 </a>
-                <a href="#" className="s-card">
+
+                <a href="/services/immigration-services" className="s-card">
                     <div className="icon">
                         <img src={require("../imgs/travel.png")} alt="immigration" />
                     </div>
@@ -118,7 +119,7 @@ const Home = ({navOpen}) => {
                 <h2>Consultation with exceptional quality.</h2>
                 <p>Just one call away: <a href="tel:+2348036778249">+2348036778249</a></p>
             </div>
-            <a href="#" className="page-btn active">Get your consultation</a>
+            <a href="/contact" className="page-btn active">Get your consultation</a>
 
         </div>
 

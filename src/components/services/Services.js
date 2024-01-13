@@ -1,24 +1,27 @@
 import React, { useEffect, useState } from 'react'
-import Residential from './Residential';
+import ResidentialConstruction from './ResidentialConstruction';
 import { Routes, useParams } from 'react-router-dom';
 import CommercialConstruction from './CommercialConstruction';
-const pages = [
-  {slug:'residential-construction', pageTitle: 'Residential Construction', element: <Residential/>},
-  {slug: 'road-construction', pageTitle: 'Road Construction', element: <Residential/>},
-  {slug: 'commercial-construction', pageTitle: 'Commercial Construction', element: <CommercialConstruction/>},
-  {slug: 'general-merchandise', pageTitle: 'General merchandise', element: <Residential/>},
-  {slug: 'immigration-services', pageTitle: 'Immigration Services', element: <Residential/>},
-  {slug: 'borehole-drilling', pageTitle: 'Borehole Drilling', element: <Residential/>},
+import RoadConstruction from './RoadConstruction';
+import BoreholeDrilling from './BoreholeDrilling';
+import GeneralMerchandise from './GeneralMerchandise';
+import ImmigrationServices from './ImmigrationServices';
 
+const pages = [
+  {slug:'residential-construction', pageTitle: 'Residential Construction', element: <ResidentialConstruction/>},
+  {slug: 'commercial-construction', pageTitle: 'Commercial Construction', element: <CommercialConstruction/>},
+  {slug: 'road-construction', pageTitle: 'Road Construction', element: <RoadConstruction/>},
+  {slug: 'borehole-drilling', pageTitle: 'Borehole Drilling', element: <BoreholeDrilling/>},
+  {slug: 'general-merchandise', pageTitle: 'General merchandise', element: <GeneralMerchandise/>},
+  {slug: 'immigration-services', pageTitle: 'Immigration Services', element: <ImmigrationServices/>},
 ]
 
 const images = [];
 const Services = () => {
-    const {slug} = useParams()
+    const {slug} = useParams();
     const [tag, setTag] = useState(slug);
     const currentPage = pages.find((page)=>page.slug === tag).element
-
-    console.log()
+  
     return (
       <section className='services-page page'>
           <div className='banner'>
@@ -44,7 +47,7 @@ const Services = () => {
                         {pages.map(page => (<TagButton key={page.slug} slug={page.slug} name={page.pageTitle} handleSetTag={setTag} tagActive={tag === page.slug ? true : false}/>))}
                       </div>
                   </div>
-                  <div className="service-content col-lg-9">
+                  <div className="article col-lg-9">
                     {currentPage}
                   </div>
               </div>

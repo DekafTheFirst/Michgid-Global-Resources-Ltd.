@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 const slides= [
     {image: require("../imgs/residential/2.jpg"), header: "Creating Homes", body: "Trust us to take your idea from blueprint to a full masterpiece. We turn your dreams into reality with unmatched craftsmanship and precision. "},
@@ -19,15 +19,20 @@ const Slider = ({navOpen}) => {
         }
     }
 
-
-
     const onPrev = () => {
         setActiveSlide(activeSlide - 1)
         if(activeSlide <= 0){
             setActiveSlide(slides.length - 1 )
         }
-
     }
+    
+    refreshInterval = setInterval(()=> {
+        next.click();
+    }, 5000)
+
+    useEffect(()=>{
+
+    }, [activeSlide])
     return (
         <div className="slider">
             <div className="list">
@@ -38,7 +43,7 @@ const Slider = ({navOpen}) => {
                         <p>
                             {slides[activeSlide].body.slice(0, 150)}
                         </p>
-                        <a className="page-btn" href="#">Contact Us</a>
+                        <a className="page-btn" href="/contact">Contact Us</a>
                     </div>
                 </div>
             </div>
