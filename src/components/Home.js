@@ -11,7 +11,7 @@ const Home = ({navOpen}) => {
     {/* Experience  */}
     <section className="about row flex container">
         <div className="about-content">
-            <h1>Welcome to Michgid Global Resources Intl.</h1>
+            <h1>Welcome to Michgid Global Resources Ltd.</h1>
             <p>Our Company has been the leading construction service to clients through out Nigeria since 20**.</p>
             <a href="/about-us" className="page-btn-2">Learn More</a>
         </div>
@@ -88,23 +88,23 @@ const Home = ({navOpen}) => {
 
                 <a href="/services/borehole-drilling" className="s-card">
                     <div className="icon">
-                        <img src={require("../imgs/borehole-drilling.png")} alt="consultation" />
+                        <img src={require("../imgs/borehole-drilling.png")} alt="borehole-drilling" />
                     </div>
                     <h4>Borehole Drilling</h4>
                 </a>
                 
-                <a href="/services/general-merchandise" className="s-card">
+                <a href="/goods" className="s-card">
                     <div className="icon">
                         <img src={require("../imgs/merchandise.png")} alt="merchandise" />
                     </div>
-                    <h4>General Merchandise</h4>
+                    <h4>Goods</h4>
                 </a>
 
-                <a href="/services/immigration-services" className="s-card">
+                <a href="/services/consultancy" className="s-card">
                     <div className="icon">
-                        <img src={require("../imgs/travel.png")} alt="immigration" />
+                        <img src={require("../imgs/consultancy.png")} alt="immigration" />
                     </div>
-                    <h4>Immigration</h4>
+                    <h4>Consultancy</h4>
                 </a>
             </div>
         </div>

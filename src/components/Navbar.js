@@ -24,20 +24,22 @@ const Navbar = ({navOpen, setNavOpen}) => {
               <li className="nav-item">
                 <NavLink to="/" className="nav-link">Home</NavLink>
               </li>
-              <li className="nav-item">
-                <NavLink className="nav-link" to="/about-us">About</NavLink>
-              </li>
+              
               <li className="nav-item">
                 <span className="nav-link dropdown-toggle" onClick={()=>setDropDownClicked(!dropdownClicked)}>Services</span>
                 <ul className={`dropdown ${dropdownClicked && 'clicked'}`}>
-                    <li className="nav-item" ><a className="nav-link" href="/services/residential-construction">Residential Construction</a></li>
-                    <li className="nav-item" ><a className="nav-link" href="/services/road-construction">Road Construction</a></li>
-                    <li className="nav-item" ><a className="nav-link" href="/services/commercial-construction">Commercial Construction</a></li>
-                    <li className="nav-item" ><a className="nav-link" href="/services/borehole-drilling">Borehole Drilling</a></li>
-                    <li className="nav-item" ><a className="nav-link" href="/services/general-merchandise">General Merchandise</a></li>
-                    <li className="nav-item" ><a className="nav-link" href="/services/immigration-services">Immigration Services</a></li>
+                    <li className="nav-item" ><NavLink className="nav-link" to="/services/residential-construction">Residential Construction</NavLink></li>
+                    <li className="nav-item" ><NavLink className="nav-link" to="/services/road-construction">Road Construction</NavLink></li>
+                    <li className="nav-item" ><NavLink className="nav-link" to="/services/commercial-construction">Commercial Construction</NavLink></li>
+                    <li className="nav-item" ><NavLink className="nav-link" to="/services/borehole-drilling">Borehole Drilling</NavLink></li>
+                    <li className="nav-item" ><NavLink className="nav-link" to="/services/consultancy">Consultancy</NavLink></li>
                 </ul>
               </li>
+              
+              <li className="nav-item">
+                <NavLink to="/goods" className="nav-link">Goods</NavLink>
+              </li>
+
               <li className="nav-item">
                 <NavLink className="nav-link" to="/projects">Projects</NavLink>
               </li>

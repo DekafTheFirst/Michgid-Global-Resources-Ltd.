@@ -2,10 +2,11 @@ import React, { useEffect, useState } from 'react'
 
 const slides= [
     {image: require("../imgs/residential/2.jpg"), header: "Creating Homes", body: "Trust us to take your idea from blueprint to a full masterpiece. We turn your dreams into reality with unmatched craftsmanship and precision. "},
+    {image: require("../imgs/commercial/3.jpg"), header: "Commercial Construction", body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque cupiditate quae ad ipsam id amet eos, labore suscipit! Itaque cupiditate quae ad."},
     {image: require("../imgs/road/1.jpg"), header: "Road Construction", body: "Every project is unique and we have custom solutions for every case brought to our table. We give modern day solutions to modern day problems."},
-    {image: require("../imgs/img7.jpg"), header: "Building Materials", body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque cupiditate quae ad ipsam id amet eos, labore suscipit! Itaque cupiditate quae ad."},
-    {image: require("../imgs/consultancy/1.jpg"), header: "Consultation", body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque cupiditate quae ad ipsam id amet eos, labore suscipit! Itaque cupiditate quae ad."},
-    {image: require("../imgs/immigration/1.jpg"), header: "Immigration", body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque cupiditate quae ad ipsam id amet eos, labore suscipit! Itaque cupiditate quae ad."},
+    {image: require("../imgs/borehole-drilling/2.jpg"), header: "Borehole Drilling", body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque cupiditate quae ad ipsam id amet eos, labore suscipit! Itaque cupiditate quae ad."},
+    {image: require("../imgs/goods/img7.jpg"), header: "Goods", body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque cupiditate quae ad ipsam id amet eos, labore suscipit! Itaque cupiditate quae ad."},
+    {image: require("../imgs/consultancy/1.jpg"), header: "Consultancy", body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque cupiditate quae ad ipsam id amet eos, labore suscipit! Itaque cupiditate quae ad."},
 ]
 
 const Slider = ({navOpen}) => {
@@ -26,9 +27,9 @@ const Slider = ({navOpen}) => {
         }
     }
     
-    refreshInterval = setInterval(()=> {
-        next.click();
-    }, 5000)
+    // refreshInterval = setInterval(()=> {
+    //     next.click();
+    // }, 5000)
 
     useEffect(()=>{
 

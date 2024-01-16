@@ -48,7 +48,7 @@ const Projects = () => {
                         <ol className="breadcrumb justify-content-center">
                             <li className="breadcrumb-item"><a href="/">Home</a></li>
                             <li className="breadcrumb-item"><a href="#">Project Gallery</a></li>
-                            <li className="breadcrumb-item active" aria-current="page">All Projects</li>
+                            <li className="breadcrumb-item active" aria-current="page">{tag}</li>
                         </ol>
                     </nav>
                 </div>

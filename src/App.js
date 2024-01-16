@@ -9,6 +9,7 @@ import Projects from './components/Projects';
 import NoPage from './components/NoPage';
 import { useEffect, useState } from 'react';
 import AboutUs from './components/AboutUs';
+import Goods from './components/Goods';
 
 
 function App() {
@@ -23,6 +24,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home navOpen={navOpen}/>}/>
             <Route path="/about-us" element={<AboutUs/>}/>
+            <Route path="/goods" element={<Goods/>}/>
+
             <Route path="/services/:slug" element={<Services />}/>
 
             <Route path="/projects" element={<Projects />}/>

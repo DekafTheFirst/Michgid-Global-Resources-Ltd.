@@ -17,9 +17,9 @@ const AboutUs = () => {
 
         <div className="article container-fluid">
             <div className="row">
-                    <h2 className='title'>Michgid Global Resources Ltd. has remained a reliable solution to your construction needs.</h2>
+                    <h2 className='title'>OUR HISTORY</h2>
                     <p className='body-text'>Welcome to Michgid Global Resources Ltd., where innovation and dedication have been at the heart of our journey. Founded in 20**, our story is one of passion, commitment, and a relentless pursuit of excellence in construction and water solutions.</p>
-                    <img src={require('../imgs/residential/6.jpg')}/>
+                    <img src={require('../imgs/residential/4.jpg')}/>
 
                     <h3 className='subheading'>Inception and Vision</h3>
                     <p className='body-text'>
