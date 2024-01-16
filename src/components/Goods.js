@@ -46,7 +46,7 @@ const products = [
 
 
 const Goods = () => {
-    const [tag, setTag] = useState('building-materials');
+    const [tag, setTag] = useState('electronics');
     const [filteredProducts, setFilteredProducts] = useState([]);
 
     useEffect(()=> {
@@ -77,8 +77,8 @@ const Goods = () => {
                             {/* <div className="tags ">
                                 {images.map(image => (<TagButton key={image.id} name={image.id} handleSetTag={setTag} tagActive={tag === image.slug ? true : false}/>))}
                             </div> */}
-                            <TagButton name="building materials" tag="building-materials" handleSetTag={setTag} tagActive={tag === "building-materials" ? true : false}/>
                             <TagButton name="electronics" tag="electronics" handleSetTag={setTag} tagActive={tag === "electronics" ? true : false}/>
+                            <TagButton name="building materials" tag="building-materials" handleSetTag={setTag} tagActive={tag === "building-materials" ? true : false}/>
                             <TagButton name="furniture" tag="furniture" handleSetTag={setTag} tagActive={tag === "furniture" ? true : false}/>
                         </div>
                     </div>
@@ -88,7 +88,7 @@ const Goods = () => {
                                 <div className="image-card">
                                     <img src={product.imagePath} alt={product.id}/>
                                     <div className="overlay">
-                                        <a href={`/services/${product.tag}`}><span>{product.productName}</span></a>
+                                        <a href={`/contact`}><span>Buy This Item</span></a>
                                     </div>
                             </div>
                         </div>))}

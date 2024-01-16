@@ -966,8 +966,13 @@ font-weight: 600;
 
 .goods-page .images .image-container .image-card{
     height: 300px;
-    background-color:  #f3f3f3;
+    background-color: #ffef99 ;
     padding: 10px;
+}
+
+.goods-page .images .image-container .image-card .overlay span{
+    font-weight: 600;
+    color: var(--cl--3--);
 }
 
 

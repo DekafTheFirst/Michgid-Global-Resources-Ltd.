@@ -44,7 +44,7 @@ const Slider = ({navOpen}) => {
                         <p>
                             {slides[activeSlide].body.slice(0, 150)}
                         </p>
-                        <a className="page-btn" href="/contact">Contact Us</a>
+                        <a className="page-btn" href="/contact">Learn More</a>
                     </div>
                 </div>
             </div>

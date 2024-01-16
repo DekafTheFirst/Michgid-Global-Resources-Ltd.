@@ -32,6 +32,7 @@ const Navbar = ({navOpen, setNavOpen}) => {
                     <li className="nav-item" ><NavLink className="nav-link" to="/services/road-construction">Road Construction</NavLink></li>
                     <li className="nav-item" ><NavLink className="nav-link" to="/services/commercial-construction">Commercial Construction</NavLink></li>
                     <li className="nav-item" ><NavLink className="nav-link" to="/services/borehole-drilling">Borehole Drilling</NavLink></li>
+                    <li className="nav-item" ><NavLink className="nav-link" to="/services/erosion-control">Erosion Control</NavLink></li>
                     <li className="nav-item" ><NavLink className="nav-link" to="/services/consultancy">Consultancy</NavLink></li>
                 </ul>
               </li>
