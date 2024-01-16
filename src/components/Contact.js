@@ -2,6 +2,7 @@ import React, { useRef } from 'react'
 import emailjs from "@emailjs/browser"
 import { toast, ToastContainer } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
+import { Link } from 'react-router-dom';
 
 const Contact = () => {
     const showToastMessage = () => {
@@ -32,7 +33,7 @@ const Contact = () => {
                 <h1>CONTACT US</h1>
                 <nav aria-label="breadcrumb">
                     <ol className="breadcrumb justify-content-center">
-                        <li className="breadcrumb-item"><a href="/">Home</a></li>
+                        <li className="breadcrumb-item"><Link to="/">Home</Link></li>
                         <li className="breadcrumb-item active" aria-current="page">Contact</li>
                     </ol>
                 </nav>

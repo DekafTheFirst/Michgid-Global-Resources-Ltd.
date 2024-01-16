@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Footer from './components/Footer';
 import Home from './components/Home';
@@ -13,16 +13,15 @@ import Goods from './components/Goods';
 
 
 function App() {
-  const [navOpen, setNavOpen] = useState(false)
 
 
   return (
     <>
-    <BrowserRouter>
-      <Navbar navOpen={navOpen} setNavOpen={setNavOpen}/>
+    <HashRouter>
+      <Navbar  />
       <div id="content">
           <Routes>
-            <Route path="/" element={<Home navOpen={navOpen}/>}/>
+            <Route path="/" element={<Home />}/>
             <Route path="/about-us" element={<AboutUs/>}/>
             <Route path="/goods" element={<Goods/>}/>
 
@@ -34,7 +33,7 @@ function App() {
           </Routes>  
       </div>
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
     </>
   );
 }

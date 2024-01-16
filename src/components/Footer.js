@@ -1,23 +1,26 @@
 import React from 'react'
 
+import { Link } from 'react-router-dom';
+
+
 const Footer = () => {
   return (
     <footer>
         <div className="container-fluid">
             <div className="row">
                 <div className="footer-details col-md-6">
-                    <a href="#" className="logo" ><img src={require("../icons/letter-m.png")} alt="logo" className="logo-img" /></a>
+                    <Link to="#" className="logo" ><img src={require("../icons/letter-m.png")} alt="logo" className="logo-img" /></Link>
                     <div className="detail">
                         <h5>Address: </h5>
                         <p>7869, Lugbe, Abuja, Nigeria</p>
                     </div>
                     <div className="detail">
                         <h5>Phone: </h5>
-                        <a href="tel:+2348036778249">+2348036778249</a>
+                        <Link to="tel:+2348036778249">+2348036778249</Link>
                     </div>
                     <div className="detail">
                         <h5>Email: </h5>
-                        <a href="mailto:contact@michgidglobal@gmail.com">contact@michgidglobal@gmail.com</a>
+                        <Link to="mailto:contact@michgidglobal@gmail.com">contact@michgidglobal@gmail.com</Link>
                     </div>
             
                 
@@ -26,18 +29,18 @@ const Footer = () => {
                     <div className="media-links mb-5">
                         <h5>Socials: </h5>
                         <div className="links">
-                            <a href="#">
+                            <Link to="#">
                                 <img className="media-icon" src={require("../icons/facebook.png")} alt=""/>
-                            </a>
-                            <a href="#">
+                            </Link>
+                            <Link to="#">
                                 <img className="media-icon" src={require("../icons/twitter.png")} alt=""/>
-                            </a>
-                            <a href="#">
+                            </Link>
+                            <Link to="#">
                                 <img className="media-icon" src={require("../icons/instagram.png")} alt=""/>
-                            </a>
-                            <a href="#">
+                            </Link>
+                            <Link to="#">
                                 <img className="media-icon" src={require("../icons/linkedin.png")} alt=""/>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                     <form action="">
@@ -49,7 +52,7 @@ const Footer = () => {
             
                 <div className="copy-right mt-3">
                     <p>Michgid Global Resources Ltd. &copy; 2023, All RIghts Reserved.</p>
-                    <a href="" className="">Contact Us</a>
+                    <Link to="" className="">Contact Us</Link>
                 </div>
                 
         </div>

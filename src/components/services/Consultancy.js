@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const Consultancy = () => {
   return (
@@ -63,7 +64,7 @@ const Consultancy = () => {
       <div className="contact">
         <h3 className='heading'>Connect with Michgid Global Resources Ltd. for Expert Legal Consultancy</h3>
         <p className='body-text'>
-          Reach out to <a href='/contact' className='contact-us-link'> Contact Us </a>for expert legal consultancy services uniquely tailored to your needs. Our team is dedicated to delivering strategic legal advice and support to help you realize your legal and immigration objectives.        
+          Reach out to <Link to='/contact' className='contact-us-link'> Contact Us </Link>for expert legal consultancy services uniquely tailored to your needs. Our team is dedicated to delivering strategic legal advice and support to help you realize your legal and immigration objectives.        
         </p>
       </div>
     </div>  

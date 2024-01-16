@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const RoadConstruction = () => {
   return (
@@ -70,7 +71,7 @@ const RoadConstruction = () => {
       <div className="contact">
         <h3 className='heading'>Partner with Michgid Global Resources Ltd.</h3>
         <p className='body-text'>
-          Ready to embark on a road construction project that enhances connectivity and fosters development? <a href='/contact' className='contact-us-link'>Contact Us</a> to discuss your requirements, explore innovative solutions, and receive a detailed proposal. We're dedicated to delivering road infrastructure that stands as a testament to quality, durability, and progress.
+          Ready to embark on a road construction project that enhances connectivity and fosters development? <Link to='/contact' className='contact-us-link'>Contact Us</Link> to discuss your requirements, explore innovative solutions, and receive a detailed proposal. We're dedicated to delivering road infrastructure that stands as a testament to quality, durability, and progress.
         </p>
       </div>
     </div>

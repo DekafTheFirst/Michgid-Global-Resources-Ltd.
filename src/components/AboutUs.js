@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const AboutUs = () => {
   return (
@@ -8,7 +9,7 @@ const AboutUs = () => {
                 <h1>About Us</h1>
                 <nav aria-label="breadcrumb">
                     <ol className="breadcrumb justify-content-center">
-                        <li className="breadcrumb-item"><a href="/">Home</a></li>
+                        <li className="breadcrumb-item"><Link to="/">Home</Link></li>
                         <li className="breadcrumb-item active" aria-current="page">About Us</li>
                     </ol>
                 </nav>
@@ -52,7 +53,7 @@ const AboutUs = () => {
                     </p>
 
                     <p className='body-text'>
-                        Thank you for being a part of our journey. We invite you to explore <a href='/services/residential-construction' className='contact-us-link'>our services</a>, discover the innovation woven into every project, and join us in building a legacy of excellence.
+                        Thank you for being a part of our journey. We invite you to explore <Link to='/services/residential-construction' className='contact-us-link'>our services</Link>, discover the innovation woven into every project, and join us in building a legacy of excellence.
                     </p>
             </div>
 

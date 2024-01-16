@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const ResidentialConstruction = () => {
   return (
@@ -54,7 +55,7 @@ const ResidentialConstruction = () => {
       <div className="contact">
         <h3 className='heading'>Contact Us</h3>
         <p className='body-text'>
-          Ready to embark on the journey of building or transforming your home? <a href='/contact' className='contact-us-link'>Contact Us</a> today to discuss your ideas, explore design possibilities, and receive a personalized quote. We're here to make your residential construction experience enjoyable, stress-free, and truly transformative.
+          Ready to embark on the journey of building or transforming your home? <Link to='/contact' className='contact-us-link'>Contact Us</Link> today to discuss your ideas, explore design possibilities, and receive a personalized quote. We're here to make your residential construction experience enjoyable, stress-free, and truly transformative.
         </p>
       </div>
     </div>

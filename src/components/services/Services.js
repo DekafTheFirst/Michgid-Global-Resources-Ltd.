@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
 
 import ResidentialConstruction from './ResidentialConstruction';
 import {  useParams, useNavigate } from 'react-router-dom';
@@ -33,8 +34,8 @@ const Services = () => {
                   <h1>Services</h1>
                   <nav aria-label="breadcrumb">
                       <ol className="breadcrumb justify-content-center">
-                          <li className="breadcrumb-item"><a href="/">Home</a></li>
-                          <li className="breadcrumb-item"><a href="#">Services</a></li>
+                          <li className="breadcrumb-item"><Link to="/">Home</Link></li>
+                          <li className="breadcrumb-item"><Link to="#">Services</Link></li>
                           <li className="breadcrumb-item active" aria-current="page">{pages.find((page => page.slug === slug)).pageTitle}</li>
                       </ol>
                   </nav>

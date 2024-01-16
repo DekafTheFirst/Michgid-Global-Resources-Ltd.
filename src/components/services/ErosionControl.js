@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const ErosionControl = () => {
   return (
@@ -39,7 +40,7 @@ const ErosionControl = () => {
       <div className="contact">
         <h3 className='heading'>Contact Michgid Global Resources Ltd. for Erosion Control Excellence</h3>
         <p className='body-text'>
-          Ready to fortify your landscape against erosion challenges? <a href='/contact' className='contact-us-link'>Contact Us</a> for tailored erosion control solutions designed to meet your project's unique needs. We're committed to environmental stewardship and the preservation of landscapes through effective erosion control practices.
+          Ready to fortify your landscape against erosion challenges? <Link to='/contact' className='contact-us-link'>Contact Us</Link> for tailored erosion control solutions designed to meet your project's unique needs. We're committed to environmental stewardship and the preservation of landscapes through effective erosion control practices.
         </p>
       </div>
     </div>

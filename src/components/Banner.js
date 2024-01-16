@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Banner = () => {
   return (
@@ -7,8 +8,8 @@ const Banner = () => {
             <h1>{}</h1>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb justify-content-center">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Project Gallery</a></li>
+                    <li class="breadcrumb-item"><Link to="#">Home</Link></li>
+                    <li class="breadcrumb-item"><Link to="#">Project Gallery</Link></li>
                     <li class="breadcrumb-item active" aria-current="page">All Projects</li>
                 </ol>
             </nav>

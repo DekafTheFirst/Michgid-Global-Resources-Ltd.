@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const CommercialConstruction = () => {
   return (
@@ -66,7 +67,7 @@ const CommercialConstruction = () => {
       <div className="contact">
         <h3 className='heading'>Partner with Michgid Global Resources Ltd.</h3>
         <p className='body-text'>
-          Ready to take your commercial project to the next level? <a href='/contact' className='contact-us-link'>Contact Us</a> to discuss your vision, explore design possibilities, and receive a detailed proposal. We're committed to delivering commercial spaces that not only meet but exceed your expectations, contributing to the success and growth of your business.        
+          Ready to take your commercial project to the next level? <Link to='/contact' className='contact-us-link'>Contact Us</Link> to discuss your vision, explore design possibilities, and receive a detailed proposal. We're committed to delivering commercial spaces that not only meet but exceed your expectations, contributing to the success and growth of your business.        
         </p>
       </div>
     </div>

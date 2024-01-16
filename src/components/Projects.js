@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Banner from './Banner'
+import { Link } from 'react-router-dom';
 
 const images = [
     {id:"residential-1", imagePath: require('../imgs/residential/1.jpg'), tag: 'residential-construction'},
@@ -46,8 +47,8 @@ const Projects = () => {
                     <h1>PROJECTS</h1>
                     <nav aria-label="breadcrumb">
                         <ol className="breadcrumb justify-content-center">
-                            <li className="breadcrumb-item"><a href="/">Home</a></li>
-                            <li className="breadcrumb-item"><a href="#">Project Gallery</a></li>
+                            <li className="breadcrumb-item"><Link to="/">Home</Link></li>
+                            <li className="breadcrumb-item"><Link to="#">Project Gallery</Link></li>
                             <li className="breadcrumb-item active" aria-current="page">{tag}</li>
                         </ol>
                     </nav>
@@ -76,7 +77,7 @@ const Projects = () => {
                                 <div className="image-card">
                                     <img src={image.imagePath} alt={image.id}/>
                                     <div className="overlay">
-                                        <a href={`/services/${image.tag}`}><span>Learn More</span></a>
+                                        <Link to={`/services/${image.tag}`}><span>Learn More</span></Link>
                                     </div>
                             </div>
                         </div>))}

@@ -343,6 +343,7 @@ header a:hover {
     margin-top: 25px;
     border-radius: 15px;
     background-color: var(--cl--3--);
+    color: var(--cl--2--);
     font-size: 16px;
     font-weight: 700;
 }
@@ -805,6 +806,7 @@ header a:hover {
     font-weight: 500;
     font-size: 16px;
     text-transform: capitalize;
+    color: var(--cl--2--);
 }
 .page .tag:hover {
     background-color: #ffeb82;
@@ -1331,9 +1333,17 @@ footer h5 {
 
 /* Media Queries */
 
-/* @media screen  and (max-width: 576px) {
-    
-} */
+@media screen  and (max-width: 576px) {
+    .arrows {
+        top: 6% !important;
+    }
+
+    .slider .list .item .content {
+        top: 12%;
+    }
+
+
+}
 
 
 @media screen  and (max-width: 767px) {
@@ -1361,7 +1371,7 @@ footer h5 {
 
     .navbar .navbar-collapse .navbar-nav{
         padding: 20px;
-        background: rgba(0, 0, 0, 0.95);
+        background: rgba(0, 0, 0, 0.9);
         height: calc(100vh - var(--nav-height));
     }
 
@@ -1385,6 +1395,7 @@ footer h5 {
 
     .thumbnail {
         justify-content: start;
+        align-items: center;
     }
 
     .slider .list .item .content h2 {

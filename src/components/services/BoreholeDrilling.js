@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const BoreholeDrilling = () => {
   return (
@@ -57,7 +58,7 @@ const BoreholeDrilling = () => {
       <div className="contact">
         <h3 className='heading'>Contact Michgid Global Resources Ltd. for Your Borehole Drilling Needs</h3>
         <p className='body-text'>
-          Ready to secure a reliable and sustainable water source for your property or project? <a href='/contact' className='contact-us-link'>Contact Us</a> today to discuss your borehole drilling requirements, obtain detailed insights through our geotechnical investigations, and benefit from our expertise in water solutions. We are dedicated to delivering water infrastructure that meets the highest standards of quality, efficiency, and environmental responsibility.
+          Ready to secure a reliable and sustainable water source for your property or project? <Link to='/contact' className='contact-us-link'>Contact Us</Link> today to discuss your borehole drilling requirements, obtain detailed insights through our geotechnical investigations, and benefit from our expertise in water solutions. We are dedicated to delivering water infrastructure that meets the highest standards of quality, efficiency, and environmental responsibility.
         </p>
       </div>
     </div>
