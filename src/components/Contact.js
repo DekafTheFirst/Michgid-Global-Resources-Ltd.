@@ -2,9 +2,11 @@ import React, { useRef } from 'react'
 import emailjs from "@emailjs/browser"
 import { toast, ToastContainer } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Contact = () => {
+
+    const navigate = useNavigate()
     const showToastMessage = () => {
         toast.success("Sent Successfully !", {
           position: toast.POSITION.TOP_RIGHT,
@@ -21,6 +23,8 @@ const Contact = () => {
         ).catch((error)=>{
             console.log("error" + error)
         })
+
+        navigate(-1);
     };
 
     
