@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/michgid-global-resources-ltd/static/css/main.2cb64538.css",
-    "main.js": "/michgid-global-resources-ltd/static/js/main.0428ecb2.js",
+    "main.js": "/michgid-global-resources-ltd/static/js/main.06a8657d.js",
     "static/media/10.jpg": "/michgid-global-resources-ltd/static/media/10.a40d685f11a1f7a23ee9.jpg",
     "static/media/1.jpg": "/michgid-global-resources-ltd/static/media/1.c43ec21d277bf553d222.jpg",
     "static/media/2.jpg": "/michgid-global-resources-ltd/static/media/2.4678666705e8c514faa0.jpg",
@@ -44,10 +44,10 @@
     "static/media/linkedin.png": "/michgid-global-resources-ltd/static/media/linkedin.6892b3ae328c7a1e055f.png",
     "index.html": "/michgid-global-resources-ltd/index.html",
     "main.2cb64538.css.map": "/michgid-global-resources-ltd/static/css/main.2cb64538.css.map",
-    "main.0428ecb2.js.map": "/michgid-global-resources-ltd/static/js/main.0428ecb2.js.map"
+    "main.06a8657d.js.map": "/michgid-global-resources-ltd/static/js/main.06a8657d.js.map"
   },
   "entrypoints": [
     "static/css/main.2cb64538.css",
-    "static/js/main.0428ecb2.js"
+    "static/js/main.06a8657d.js"
   ]
 }
